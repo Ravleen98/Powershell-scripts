@@ -3,7 +3,7 @@ Import-Module ActiveDirectory
 
 # Function to generate a random password
 function Generate-RandomPassword {
-    $length = 12
+    $length = 15
     $chars = [char[]]('a'..'z' + 'A'..'Z' + '0'..'9' + '!@#$%^&*()')
     $password = -join ((Get-Random -Count $length -InputObject $chars) | Sort-Object {Get-Random})
     return $password
