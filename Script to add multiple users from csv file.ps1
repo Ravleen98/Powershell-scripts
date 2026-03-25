@@ -1,3 +1,5 @@
+#IMPORT CSV FILE
+
 $ADUSers = Import-csv C:\Powershell\newadusers.csv
 foreach ($user in $ADUSers)
 {
